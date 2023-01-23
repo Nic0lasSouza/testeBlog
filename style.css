@@ -360,13 +360,43 @@ footer ul a:hover{
     }
 
     .nav__items li{
-        width: 100%;
+        width: 400px;
         height: 4.5rem;
         display: flex;
         align-items: center;
         box-shadow: -2rem 3rem 7rem rgba(0 , 0, 0, 0.7);
         background: var(--color-gray-900);
         border-top: 1px solid var(--color-bg);
+        animation: animateDropdown 400ms 0s ease forwards;
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    .nav__items li:nth-child(2){
+        animation-delay: 200ms;
+    }
+
+    .nav__items li:nth-child(3){
+        animation-delay: 400ms;
+    }
+
+    .nav__items li:nth-child(4){
+        animation-delay: 600ms;
+    }
+
+    .nav__items li:nth-child(5){
+        animation-delay: 800ms;
+    }
+
+    /* nav dropdonw animation */
+    @keyframes animateDropdown {
+        0%{
+            transform: rotateX(90deg);
+        }
+        100%{
+            transform: rotateX(0deg);
+            opacity: 1;
+        }
     }
 
     .nav__items li a{
@@ -391,5 +421,54 @@ footer ul a:hover{
     .nav__profile .avatar{
         margin-left: 2rem;
         border: 0;
+    }
+
+    .featured__container{
+        gap: 3rem;
+    }
+
+    .posts__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+/* ===========================MEDIA QUERIES (SMALL DEVICES)========================================= */
+@media screen and (max-width: 600px){
+    section {
+        margin-top: 2rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .featured{
+        margin-top: 6rem;
+    }
+
+    .featured__container{
+        grid-template-columns: 1fr ;
+        gap:  0;
+    }
+
+    .posts__container{
+        grid-template-columns: 1fr;
+    }
+
+    .category__buttons-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
     }
 }
