@@ -310,6 +310,23 @@ footer ul a:hover{
     border-top: 2px solid var(--color-bg);
     margin-top: 4rem;
 }
+/* ==============MEDIA SEARCH=============== */
+.search__bar{
+    margin-top: 7rem;
+}
+
+.search__bar-container{
+    position: relative;
+    width: 30rem;
+    background: var(--color-gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.6rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    color: var(--color-gray-300);
+}
 
 /* ==================MEDIA QUERIES (MEDIUM DEVICES)====================== */
 @media screen and (max-width: 1024px){
@@ -438,7 +455,7 @@ footer ul a:hover{
     }
 }
 
-/* ===========================MEDIA QUERIES (SMALL DEVICES)========================================= */
+/* ==============MEDIA QUERIES (SMALL DEVICES)=============== */
 @media screen and (max-width: 600px){
     section {
         margin-top: 2rem;
