@@ -328,6 +328,57 @@ footer ul a:hover{
     color: var(--color-gray-300);
 }
 
+.search__bar-container > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search__bar input{
+    background: transparent;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    /* color: var(--color-white); */
+}
+
+.search__bar input::placeholder{
+    color: var(--color-gray-300);
+}
+
+/* ==================BUTTON====================== */
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+/* =============SINGLE POST========================== */
+
+.singlepost{
+    margin: 6rem 0 2rem;
+}
+
+.singlepost__container{
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 2rem;
+}
+
+.singlepost .post__thumbnail{
+    margin-top: 1.5rem;
+}
+
+.singlepost__container p{
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
 /* ==================MEDIA QUERIES (MEDIUM DEVICES)====================== */
 @media screen and (max-width: 1024px){
     /* ============GENERAL================= */
@@ -453,6 +504,13 @@ footer ul a:hover{
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }
+
+
+
+    /* =================BLOG===================== */
+    .search__bar-container{
+        width: 60%;
+    }
 }
 
 /* ==============MEDIA QUERIES (SMALL DEVICES)=============== */
@@ -487,5 +545,10 @@ footer ul a:hover{
         align-items: center;
         text-align: center;
         gap: 2rem;
+    }
+
+    /* =================BLOG===================== */
+    .search__bar-container{
+        width: var(--container-width-md);
     }
 }
