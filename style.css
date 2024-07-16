@@ -44,6 +44,7 @@ body{
     overflow-x: hidden;
     background: var(--color-bg);
     font-size: 0.9rem;
+    background: #00c476;
 }
 
 .container {
